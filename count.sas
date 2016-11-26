@@ -7,7 +7,7 @@
     proc sql noprint;
         create table &dataout. as
         select distinct &var.
-        from &datain.
+        from &datain.;
     quit;
 %mend count;
 
